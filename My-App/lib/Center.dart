@@ -45,17 +45,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       ),
-
-      // ListView.builder(
-      //   itemBuilder: (context, index) {
-      //     return Text(
-      //       arrNames[index],
-      //       style: TextStyle(fontSize: 30, fontWeight: FontWeight.w700),
-      //     );
-      //   },
-      //   itemCount: arrNames.length,
-      //   itemExtent: 200,
-      // ),
     );
   }
 }
