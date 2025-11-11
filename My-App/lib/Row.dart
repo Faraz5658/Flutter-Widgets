@@ -33,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
-        title: Text("THIS IS MY FIRST FLUTTER APP"),
+        title: Text("THIS IS ROW WIDGET"),
       ),
       body: Row(
         // mainAxisAlignment: MainAxisAlignment.spaceAround,
