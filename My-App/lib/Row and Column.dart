@@ -35,13 +35,22 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.deepPurple,
         title: Text("THIS IS MY FIRST FLUTTER APP"),
       ),
-      body: Row(
-        // mainAxisAlignment: MainAxisAlignment.spaceAround,
-        // mainAxisAlignment: MainAxisAlignment.center,
-        //  mainAxisAlignment: MainAxisAlignment.end,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-
-        children: [Text('1'), Text('2'), Text('3')],
+      body: Container(
+        padding: EdgeInsets.all(20),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [Text("This"), Text("is"), Text("Row")],
+            ),
+            Text("This"),
+            Text("is"),
+            Text("Column"),
+          ],
+        ),
       ),
     );
   }
