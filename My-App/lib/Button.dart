@@ -35,15 +35,34 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.deepPurple,
         title: Text("THIS IS CENTER WIDGET"),
       ),
-      body: OutlinedButton(
-        child: Text("Click Here..."),
-        onPressed: () {
-          print("OutlinedButton Clicked...");
-        },
-        onLongPress: () {
-          print("OutlinedButton Long Pressed...");
-        },
-      ),
+      body:
+          //  OutlinedButton(
+          //   child: Text("Click Here..."),
+          //   onPressed: () {
+          //     print("OutlinedButton Clicked...");
+          //   },
+          //   onLongPress: () {
+          //     print("OutlinedButton Long Pressed...");
+          //   },
+          // ),
+          // ElevatedButton(
+          //   child: Text("Click Here..."),
+          //   onPressed: () {
+          //     print("ElevatedButton Clicked...");
+          //   },
+          //   onLongPress: () {
+          //     print("ElevatedButton Long Pressed...");
+          //   },
+          // ),
+          TextButton(
+            child: Text("Click Here..."),
+            onPressed: () {
+              print("Button Clicked...");
+            },
+            onLongPress: () {
+              print("Button Long Pressed...");
+            },
+          ),
     );
   }
 }
