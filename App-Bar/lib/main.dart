@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.deepPurple),
-      home: const MyHomePage(title: 'Card Widget'),
+      home: const MyHomePage(title: 'Widget'),
     );
   }
 }
