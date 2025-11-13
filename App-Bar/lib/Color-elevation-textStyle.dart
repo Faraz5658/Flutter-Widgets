@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
             style: TextStyle(color: Colors.white),
           ),
           backgroundColor: Colors.black,
-          elevation: 10.0,
+          elevation: 20.0,
           toolbarHeight: 70.0,
           centerTitle: true,
         ),

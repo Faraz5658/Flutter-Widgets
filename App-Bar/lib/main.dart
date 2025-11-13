@@ -33,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
-        title: const Text(" Card Widget"),
+        title: const Text(" Flutter Widgets"),
       ),
       body: Center(child: Text("Main Dart File")),
     );
