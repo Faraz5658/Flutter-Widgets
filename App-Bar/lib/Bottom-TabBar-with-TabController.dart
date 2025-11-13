@@ -24,7 +24,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3, // Number of tabs
+      length: 5, // Number of tabs
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Bottom TabBar with TabController'),
@@ -35,6 +35,8 @@ class MyHomePage extends StatelessWidget {
               Tab(text: 'Home'),
               Tab(icon: Icon(Icons.star)),
               Tab(text: 'Profile'),
+              Tab(icon: Icon(Icons.settings)),
+              Tab(text: 'More'),
             ],
           ),
         ),
@@ -55,6 +57,18 @@ class MyHomePage extends StatelessWidget {
             Center(
               child: Text(
                 '👤 Profile Screen',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+            ),
+            Center(
+              child: Text(
+                '⚙️ Settings Screen',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+            ),
+            Center(
+              child: Text(
+                '➕ More Options Screen',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
             ),
