@@ -35,15 +35,14 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.deepPurple,
         title: const Text(" Image Widget "),
       ),
-      body: Column(
+      body: Row(
         mainAxisAlignment: MainAxisAlignment.center,
-        // crossAxisAlignment: CrossAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset('assets/images/flutter.png', width: 100),
-          const SizedBox(height: 20),
+          Image.asset('assets/images/flutter.png', width: 150, height: 150),
+          const SizedBox(width: 20),
           Image.network(
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVi0_LBT6zMrJTlBE_j-83Nk2-_DIoia3lCw&s',
-            width: 100,
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsBJOTkrdy4RYmXuMtyxpZ9RcA42nY0NdoSw&s',
           ),
         ],
       ),
