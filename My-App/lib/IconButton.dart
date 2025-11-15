@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: IconButton(
         icon: Icon(Icons.info),
-        tooltip: 'More Info',
+        // tooltip: 'More Info',
         onPressed: () {
           print('INFO BUTTON PRESS');
         },
