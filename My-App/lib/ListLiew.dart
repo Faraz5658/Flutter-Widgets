@@ -10,10 +10,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Icon Page',
+      title: 'List Liew Page',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.deepPurple),
-      home: const MyHomePage(title: 'Icon Page'),
+      home: const MyHomePage(title: 'List Liew Page'),
     );
   }
 }
@@ -33,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
-        title: Text("Icon Page"),
+        title: Text("List Liew Page"),
       ),
       body:
           // ListView Simple
@@ -54,6 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
           //     return Text("Item $index");
           //   },
           // ),
+          // ListView separated
           ListView.separated(
             itemCount: 7,
             separatorBuilder: (context, index) => Divider(),
