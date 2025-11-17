@@ -35,6 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.deepPurple,
         title: Text("Padding & Margin Page"),
       ),
+      //Padding & Margin
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Container(
