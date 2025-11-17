@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
         padding: const EdgeInsets.all(16.0),
         child: Container(
           margin: const EdgeInsets.all(30.0),
-          color: Colors.deepPurple,
+          color: const Color.fromARGB(255, 183, 58, 177),
           height: 100,
           width: double.infinity,
           child: const Center(
