@@ -44,6 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
+                // Current Date
                 'Current Date: ${time.day}-${time.month}-${time.year}',
                 style: TextStyle(
                   fontSize: 25,
@@ -58,6 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Text("Get Current Date"),
               ),
               Text(
+                //Current Time
                 'Current Time: ${time.hour}:${time.minute}:${time.second}:${time.millisecond}',
                 style: TextStyle(
                   fontSize: 25,
