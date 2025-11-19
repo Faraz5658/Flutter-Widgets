@@ -52,12 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.deepPurple,
                 ),
               ),
-              ElevatedButton(
-                onPressed: () {
-                  setState(() {});
-                },
-                child: Text("Get Current Date"),
-              ),
+              SizedBox(height: 20),
               Text(
                 //Current Time
                 'Current Time: ${time.hour}:${time.minute}:${time.second}:${time.millisecond}',
