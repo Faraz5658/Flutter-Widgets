@@ -35,12 +35,21 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.deepPurple,
         title: Center(child: Text("Splitting Widgets")),
       ),
-      body: Column(children: [CatItem(), About(), Contact(), Subcontact()]),
+      body: Column(
+        children: [
+          CatItem(), //Call the function
+          About(), //Call the function
+          Contact(), //Call the function
+          Subcontact(), //Call the function
+        ],
+      ),
     );
   }
 }
 
+//Create a stateless widget
 class CatItem extends StatelessWidget {
+  // call the fuction CatItem
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -66,6 +75,7 @@ class CatItem extends StatelessWidget {
 }
 
 class About extends StatelessWidget {
+  // call the fuction About
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -89,6 +99,7 @@ class About extends StatelessWidget {
 }
 
 class Contact extends StatelessWidget {
+  // call the fuction Contact
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -115,6 +126,7 @@ class Contact extends StatelessWidget {
 }
 
 class Subcontact extends StatelessWidget {
+  // call the fuction Subcontact
   @override
   Widget build(BuildContext context) {
     return Expanded(
