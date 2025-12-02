@@ -29,8 +29,8 @@ class login_page extends StatefulWidget {
 }
 
 class _login_pageState extends State<login_page> {
-  final EmailCtl = TextEditingController();
-  final PassCtl = TextEditingController();
+  final email = TextEditingController();
+  final pass = TextEditingController();
   bool showPassword = false;
   @override
   Widget build(BuildContext context) {
@@ -47,33 +47,44 @@ class _login_pageState extends State<login_page> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                const Text("Login", style: TextStyle(fontSize: 30)),
+                const Text('Login Page', style: TextStyle(fontSize: 30)),
                 const SizedBox(height: 20),
                 TextField(
-                  controller: EmailCtl,
+                  controller: email,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10.0),
                     ),
                     labelText: "Email",
-                    hintText: "XYZ@gmail.com",
+                    hintText: "Enter Email",
                   ),
                 ),
                 SizedBox(height: 20),
                 TextField(
-                  controller: PassCtl,
+                  controller: pass,
+                  obscureText: !showPassword,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10.0),
                     ),
                     labelText: "Password",
-                    hintText: "Passwords",
+                    hintText: "Enter Email Password",
+                    suffix: IconButton(
+                      onPressed: () {
+                        setState(() {
+                          showPassword = !showPassword;
+                        });
+                      },
+                      icon: Icon(
+                        showPassword ? Icons.visibility : Icons.visibility_off,
+                      ),
+                    ),
                   ),
                 ),
                 SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: () {
-                    print("Login Page");
+                    print("You'r email is this${pass.text}");
                   },
                   child: Text("Login"),
                 ),
